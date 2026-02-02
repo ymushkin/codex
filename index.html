@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>אפליקציה לניהול מידע רפואי</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div>
+        <h1>אפליקציה לניהול מידע רפואי</h1>
+        <p>סקירה מאוחדת של נתוני המטופל, תרופות וביקורים.</p>
+      </div>
+      <button class="primary">צור תיק חדש</button>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <div class="card-header">
+          <h2>פרטי מטופל</h2>
+          <button class="ghost">עריכה</button>
+        </div>
+        <div class="grid">
+          <div>
+            <span class="label">שם מלא</span>
+            <strong>ליה כהן</strong>
+          </div>
+          <div>
+            <span class="label">מס׳ ת.ז</span>
+            <strong>035982741</strong>
+          </div>
+          <div>
+            <span class="label">רופא מטפל</span>
+            <strong>ד"ר אמיר לוי</strong>
+          </div>
+          <div>
+            <span class="label">טלפון</span>
+            <strong>054-771-2233</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>תרופות פעילות</h2>
+          <button class="ghost" id="add-medication">הוסף תרופה</button>
+        </div>
+        <ul class="list" id="medication-list">
+          <li>
+            <div>
+              <strong>מטפורמין 500 מ"ג</strong>
+              <span>פעמיים ביום אחרי אוכל</span>
+            </div>
+            <span class="tag">מעודכן</span>
+          </li>
+          <li>
+            <div>
+              <strong>לוסרטן 50 מ"ג</strong>
+              <span>בוקר</span>
+            </div>
+            <span class="tag warn">בדיקת לחץ דם</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>אלרגיות ורגישויות</h2>
+          <button class="ghost">עדכן</button>
+        </div>
+        <div class="chips">
+          <span class="chip">פניצילין</span>
+          <span class="chip">אבקנים</span>
+          <span class="chip">אגוזים</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>ביקורים אחרונים</h2>
+          <button class="ghost">צפה בהיסטוריה</button>
+        </div>
+        <div class="timeline">
+          <div>
+            <span class="label">12.07.2024</span>
+            <strong>בדיקת סוכרת תקופתית</strong>
+            <p>אבחנה יציבה, הומלץ המשך טיפול ושינוי תזונתי.</p>
+          </div>
+          <div>
+            <span class="label">03.06.2024</span>
+            <strong>מעקב לחץ דם</strong>
+            <p>הומלץ להוסיף מדידה ביתית פעמיים בשבוע.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>סיכום מטלות לצוות</h2>
+          <button class="ghost">נהל משימות</button>
+        </div>
+        <div class="tasks">
+          <label class="task-item">
+            <input type="checkbox" checked />
+            <span>לתזמן בדיקת מעבדה לחודש הבא</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" />
+            <span>לעדכן מינון תרופה לאחר ייעוץ קרדיולוגי</span>
+          </label>
+          <label class="task-item">
+            <input type="checkbox" />
+            <span>לשלוח סיכום ביקור למטופל</span>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
